@@ -1,0 +1,26 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Project description",
+      "default": "A Static Website"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    },
+    "license": {
+      "type": "string",
+      "label": "License",
+      "default": "MIT"
+    }
+  },
+  "skipInterpolation": "*/**/*",
+  "completeMessage": "{{#inPlace}}To get started:\n\n  yarn || npm install\n  yarn dev || npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  yarn || npm install\n  yarn dev || npm run dev{{/inPlace}}"
+}
